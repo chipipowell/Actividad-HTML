@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Luis David Peña Sangil 1DAMBB-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="icon" href="../imagenes/favicon-96x96.png">
+    <title>Mi Página</title>
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a href="../index.html">Tim Berners-Lee</a></li>
+            <li><a href="../html/portfolio.html">Portfolio</a></li>
+            <li><a href="../html/precios.html.html">Tabla de Precios</a></li>
+            <li><a href="../html/contactame.html">Contactame</a></li>
+        </ul>
+                    
+    <img src="../imagenes/imagen-menu.png" usemap="#mapa_zonas">
+                    
+    <map name="mapa_zonas">
+        <area shape="rect" coords="15,44,107,132" href="../index.html">
+        <area shape="circle" coords="173,92,50" href="../html/portfolio.html">
+        <area shape="polygon" coords="231,135,287,42,345,135" href="../html/precios.html.html">
+        <area shape="rect" coords="351,32,439,140" href="../html/contactame.html">               
+    </map>
+    </div>
+
+    <div id="main-content">
+        <h1>Contactame</h1>
+        <h2>Formulario de Contacto</h2>
+        <form action="https://Luisdavid.es/contactar.php" method="POST">
+            <fieldset>
+                <legend><b>Datos Personales</b></legend>
+                <div>
+                    <label for="nombre"><b>Nombre:</b></label>
+                    <input type="text" name="nombre"  placeholder="Introduce tu nombre..." required>
+                    <label for="nombre"><abbr title="required" aria-required="required">*</abbr></label>
+                </div>
+
+                <div>
+                    <label for="apellidos"><b>Apellidos:</b></label>
+                    <input type="text" name="apellidos" placeholder="Introduce tu apellido..." required>
+                    <label for="apellidos"><abbr title="campo obligatorio" aria-required="required">*</abbr></label>
+                </div>
+
+                <div>
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" name="email" required>
+                    <label for="email"><abbr title="campo obligatorio" aria-required="required">*</abbr></label>
+                </div>
+
+                <div>
+                    <label for="fecha"><b>Fecha de Nacimiento:</b></label>
+                    <input type="date" name="fecha" value="fecha" max="100" min="13">
+                </div>
+
+                <div>
+                    <label for="edad"><b>Edad:</b></label>
+                    <input type="number" name="edad" value="edad" min="10" max="100">
+                </div>
+
+                <div>
+                    <label for="sexo"><b>Sexo:</b></label>
+
+                    <input type="radio" name="sexo" value="hombre" checked>
+                    <label for="sexo"><b>Hombre</b></label>
+
+                    <input type="radio" name="sexo" value="mujer">
+                    <label for="sexo"><b>Mujer</b></label>
+
+                    <input type="radio" name="sexo" value="otro">
+                    <label for="sexo"><b>Otro</b></label>
+                </div>
+
+                <div>
+                    <label for="pais"><b>País:</b></label>
+                    <select name="pais" id="pais">
+                        <option value="seleccion" selected="selected">- Selecciona -</option>
+                        <option value="españa">España</option>
+                        <option value="francia">Francia</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="italia">Italia</option>
+                    </select>
+                </div>
+            </fieldset> 
+       
+            <fieldset>
+                <legend><b>Otros Datos</b></legend>
+                
+                <label for="mensaje"><b>Mensaje:</b></label> 
+                <textarea name="mensaje" id="mensaje" cols="55" rows="10" placeholder="Introduce tu mensaje..."></textarea>
+
+                <div>
+                    <label for="foto"><b>Adjuntar una foto...</b></label>
+                    <input type="file" name="foto" value="foto">
+                </div>
+            </fieldset>
+
+            <div>  
+                <label><input type="checkbox" name="condiciones" value="condiciones" checked><b>He leído las condiciones...</b></label> 
+            </div>
+    
+            <input type="reset" name="limpiar" value="Limpiar">
+            <input type="submit" name="enviar">
+        </form>
+    </div>
+    <br>
+
+    <div id="side-content">
+        <h1>Centro de referencia</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7795771532196!2d-16.285456884603807!3d28.45606029879622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1636440863115!5m2!1ses!2ses" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <br>
+    <div id="footer">
+        &#169 <b>2040</b> <a href="../index.html">www.MiSitio.com</a>
+    </div>
+    <br>
+</body>
+</html>

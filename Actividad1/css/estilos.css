@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+#Tabla-sub{
+    text-align: center
+}
+
+#header {
+    background-color: antiquewhite;
+}
+#main-content {
+    background-color:cadetblue;
+}
+#side-content {
+    background-color: chocolate;
+}
+#footer {
+    background-color: cornflowerblue;
+}
+
+table {
+    /* border: 1px solid blue; */
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid gray;
+}
+
+.articulo {
+    background-color: lightsalmon;
+    
+}
